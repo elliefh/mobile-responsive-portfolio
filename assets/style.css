@@ -1,7 +1,7 @@
 :root {
     --blue: #445877;
     --teal: #92ccce;
-    --navy: #31343d;
+    --grey: #31343d;
     --dark: #1c1d21;
     --light: #eeeef7;
 }
@@ -13,32 +13,44 @@
 }
 
 body {
-    background-color: var(--teal);
+    background-color: var(--light);
     font-family: 'Abril Fatface', cursive;
 }
 
 header {
-    background-color: var(--navy);
+    background-color: var(--grey);
     color: white;
-    padding: 25px;
+    padding: 10px;
+    min-width: 100vw;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 45px;
     display: inline-block;
+    background-color: var(--teal);
+    color: var(--grey);
 }
 
-ul {
+header ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
 }
 
 header a {
-    color: white;
-    text-decoration: none;
+    color: var(--teal);
+    text-decoration-line: none;
     background-color: var(--yellow);
     padding: 10px;
+    font-size: 20px;
+}
+
+main {
+    color: var(--blue);
+}
+
+main h2 {
+    font-size: 50px;
 }
 
 #main-image img {
@@ -49,12 +61,9 @@ header a {
 }
 
 #floating-subtitles {
-    background-color: var(--yellow);
-}
-
-#about-me h1 {
-    justify-content: flex-end;
-    background-color: salmon;
+    background-color: var(--teal);
+    color: var(--grey);
+    font-size: 30px;
 }
 
 p {
