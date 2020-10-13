@@ -37,20 +37,18 @@ header ul {
     list-style-type: none;
 }
 
+header li {
+    margin: 0 5px;
+    border-style: none none solid none;
+    border-width: medium;
+    border-color: var(--teal);
+}
+
 header a {
     color: var(--teal);
     text-decoration-line: none;
-    background-color: var(--yellow);
     padding: 10px;
     font-size: 20px;
-}
-
-main {
-    color: var(--blue);
-}
-
-main h2 {
-    font-size: 50px;
 }
 
 #main-image img {
@@ -64,6 +62,33 @@ main h2 {
     background-color: var(--teal);
     color: var(--grey);
     font-size: 30px;
+}
+
+main {
+    color: var(--blue);
+    margin: 0 75px;
+}
+
+main h2 {
+    font-size: 50px;
+    width: 30vw;
+}
+
+main p {
+    width: 70vw;
+}
+
+#contact-me ul {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#about-me, #contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 p {
