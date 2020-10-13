@@ -1,0 +1,28 @@
+:root {
+    --navy: #003d5b;
+    --blue: #30638e;
+    --teal: #00798c;
+    --red: #d1495b;
+    --yellow: #edae49;
+
+}
+header {
+    background-color: var(--navy);
+    color: white;
+    float: right;
+}
+
+/* ul {
+    list-style-type: none;
+} */
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+#main-image img {
+    width: 100vw;
+    height: 25vmax;
+}
