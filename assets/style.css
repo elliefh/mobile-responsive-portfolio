@@ -1,9 +1,9 @@
 :root {
-    --navy: #003d5b;
-    --blue: #30638e;
-    --teal: #00798c;
-    --red: #d1495b;
-    --yellow: #edae49;
+    --blue: #445877;
+    --teal: #92ccce;
+    --navy: #31343d;
+    --dark: #1c1d21;
+    --light: #eeeef7;
 }
 
 * {
@@ -25,18 +25,20 @@ header {
 
 h1 {
     font-size: 50px;
-}
-
-li {
-    list-style-type: none;
     display: inline-block;
-    font-size: 30px;
 }
 
-ul li a {
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+header a {
     color: white;
     text-decoration: none;
     background-color: var(--yellow);
+    padding: 10px;
 }
 
 #main-image img {
@@ -48,10 +50,13 @@ ul li a {
 
 #floating-subtitles {
     background-color: var(--yellow);
-    position: 
 }
 
 #about-me h1 {
     justify-content: flex-end;
     background-color: salmon;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
 }
