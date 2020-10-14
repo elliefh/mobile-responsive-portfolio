@@ -1,3 +1,4 @@
+/* variables declaration */
 :root {
     --blue: #445877;
     --teal: #92ccce;
@@ -6,9 +7,9 @@
     --light: #eeeef7;
 }
 
+/* general styling */
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
 }
 
@@ -17,24 +18,34 @@ body {
     font-family: 'Abril Fatface', cursive;
 }
 
+/* styling for the header section of the website */
 header {
     background-color: var(--grey);
     color: white;
     padding: 10px;
     min-width: 100vw;
+    display: flex;
+    align-items: center;
 }
 
 h1 {
-    font-size: 45px;
-    display: inline-block;
+    padding-left: 50px;
+    margin: 0;
+    width: 30vw;
+    font-size: 30px;
     background-color: var(--teal);
     color: var(--grey);
+}
+
+nav {
+    width: 70vw;
 }
 
 header ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    padding-right: 60px;
 }
 
 header li {
@@ -48,14 +59,14 @@ header a {
     color: var(--teal);
     text-decoration-line: none;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
+/* styling for the website's main image */
 #main-image img {
     width: 100vw;
-    height: 30vh;
+    height: 45vh;
     object-fit: cover;
-    object-position: 50% 30%;
 }
 
 #floating-subtitles {
@@ -64,53 +75,104 @@ header a {
     font-size: 30px;
 }
 
+/* styling for the main content of the website */
 main {
     color: var(--blue);
-    margin: 0 75px;
-}
-
-main h2 {
-    font-size: 50px;
-    width: 30vw;
-    padding-right: 10px;
-    border-style: none solid none none;
-    border-color: var(--blue);
-    border-width: 3px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-main p {
-    width: 70vw;
-    padding-left: 30px;
-}
-
-#contact-me ul {
-    width: 70vw;
-    padding-left: 30px;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
-#about-me, #contact-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    margin: 0 70px;
 }
 
 p {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* styling for the about me, portfolio and contact me headers to be flushed to the left*/
+main h2 {
+    font-size: 30px;
+    width: 30vw;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#about-me, #my-work, #contact-me {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* styling for the about me details */
+#about-me p {
+    width: 70vw;
+    padding-left: 30px;
+    border-style: none none none solid;
+    border-color: var(--blue);
+    border-width: 3px;
+}
+
+/* styling for the contact me details */
+#contact-me ul {
+    width: 70vw;
+    padding-left: 30px;
+    border-style: none none none solid;
+    border-color: var(--blue);
+    border-width: 3px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
 #contact-me li {
     border-style: none none solid none;
     border-width: medium;
     border-color: var(--blue);
+    font-size: 18px;
 }
 
 #contact-me a {
     color: var(--blue);
     text-decoration-line: none;
+    font-size: 18px;
+}
+
+/* styling for projects details */
+.projects {
+    padding-left: 30px;
+    width: 70vw;
+    border-style: none none none solid;
+    border-color: var(--blue);
+    border-width: 3px;
+}
+
+#project-one {
+    background-color: aqua;
+    border-style: solid;
+    border-color: var(--teal);
+    border-width: medium;
+    margin-bottom: 10px;
+}
+
+#project-two, #project-five {
+    background-color: salmon;
+    border-style: solid;
+    border-color: var(--teal);
+    border-width: medium;
+    margin-bottom: 10px;
+}
+
+#project-three, #project-four {
+    background-color: blueviolet;
+    border-style: solid;
+    border-color: var(--teal);
+    border-width: medium;
+    margin-bottom: 10px;
+}
+
+#cropped1 {
+    width: 500px;
+    object-fit: cover;
+    border-style: solid;
+    border-color: var(--teal);
+    border-width: medium;
 }
