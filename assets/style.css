@@ -22,29 +22,36 @@ body {
 header {
     background-color: var(--grey);
     color: white;
-    padding: 10px;
-    min-width: 100vw;
+    padding: 30px;
+    width: 100%;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 h1 {
-    padding-left: 50px;
-    margin: 0;
+    padding-right: 20px;
     width: 30%;
     font-size: 30px;
     background-color: var(--teal);
     color: var(--grey);
+    text-align: end;
+    position: absolute;
+    left: 0;
 }
 
 nav {
     width: 70%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 header ul {
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
     padding-right: 60px;
 }
 
@@ -226,3 +233,16 @@ main h2 {
     bottom: 70px;
     left: 0;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: salmon;
+      font-size: 12px;
+    }
+
+    h1, nav {
+        width: 100%;
+    }
+
+
+  }
