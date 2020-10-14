@@ -26,6 +26,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     position: relative;
 }
 
@@ -42,16 +43,13 @@ h1 {
 
 nav {
     width: 70%;
-    display: flex;
-    justify-content: flex-end;
 }
 
 header ul {
-    /* display: flex;
-    justify-content: flex-end; */
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     padding-right: 60px;
 }
 
