@@ -63,6 +63,11 @@ header a {
 }
 
 /* styling for the website's main image */
+#main-image {
+    position: relative;
+    text-align: center;
+}
+
 #main-image img {
     width: 100vw;
     height: 45vh;
@@ -70,9 +75,15 @@ header a {
 }
 
 #floating-subtitles {
+    width: 20vw;
     background-color: var(--teal);
     color: var(--grey);
-    font-size: 30px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 /* styling for the main content of the website */
@@ -82,7 +93,7 @@ main {
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: sans-serif;
 }
 
 /* styling for the about me, portfolio and contact me headers to be flushed to the left*/
@@ -145,34 +156,78 @@ main h2 {
     border-width: 3px;
 }
 
-#project-one {
-    background-color: aqua;
-    border-style: solid;
-    border-color: var(--teal);
-    border-width: medium;
-    margin-bottom: 10px;
+#row-one {
+    position: relative;
+    text-align: center;
 }
 
-#project-two, #project-five {
-    background-color: salmon;
-    border-style: solid;
-    border-color: var(--teal);
-    border-width: medium;
-    margin-bottom: 10px;
-}
-
-#project-three, #project-four {
-    background-color: blueviolet;
-    border-style: solid;
-    border-color: var(--teal);
-    border-width: medium;
-    margin-bottom: 10px;
-}
-
-#cropped1 {
-    width: 500px;
+#most-recent-project {
+    width: 100%;
+    height: 400px;
     object-fit: cover;
-    border-style: solid;
-    border-color: var(--teal);
-    border-width: medium;
+    border: medium solid var(--teal);
+}
+
+#recent-project {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border: medium solid var(--teal);
+    justify-content: flex-start;
+}
+
+#caption1 {
+    width: 20vw;
+    padding: 5px;
+    background-color: var(--teal);
+    color: var(--grey);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
+#caption h2 {
+    font-size: 15px;
+}
+
+#caption p {
+    font-size: 15px;
+}
+
+#row-two, #row-three {
+    display: flex;
+    flex-direction: row;
+}
+
+#row-two-left, #row-two-right, #row-three-left, #row-three-right {
+    position: relative;
+    display: flex;
+    margin: 2px;
+}
+
+/* #row-two-right {
+    position: relative;
+    display: flex;
+} */
+
+#row-two img, #row-three img {
+    width: 99%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#caption2, #caption3, #caption4, #caption5 {
+    width: 10vw;
+    padding: 5px;
+    background-color: var(--teal);
+    color: var(--grey);
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    position: absolute;
+    bottom: 70px;
+    left: 0;
 }
