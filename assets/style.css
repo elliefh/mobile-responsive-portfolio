@@ -6,9 +6,8 @@
     --dark: #1c1d21;
     --light: #eeeef7;
     --largeFont: 40px;
-    --mediumFont: 30px;
+    --mediumFont: 20px;
     --smallFont: 15px;
-    --linkFont: 20px;
 }
 
 /* general styling */
@@ -61,7 +60,7 @@ header a {
     color: var(--teal);
     text-decoration-line: none;
     padding: 10px;
-    font-size: var(--linkFont);
+    font-size: var(--mediumFont);
 }
 
 /* styling for the website's main image */
@@ -72,7 +71,7 @@ header a {
 
 .main-img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -138,13 +137,13 @@ main h2 {
     border-style: none none solid none;
     border-width: medium;
     border-color: var(--blue);
-    font-size: var(--linkFont);
+    font-size: var(--mediumFont);
 }
 
 #contact-me a {
     color: var(--blue);
     text-decoration-line: none;
-    font-size: var(--linkFont);
+    font-size: var(--mediumFont);
 }
 
 /* styling for projects details */
@@ -166,7 +165,7 @@ main h2 {
     height: 250px;
     object-fit: cover;
     border: thick solid var(--teal);
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 #recent-project {
@@ -174,8 +173,7 @@ main h2 {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border: thick solid var(--teal);
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 #caption1 {
@@ -189,6 +187,7 @@ main h2 {
     position: absolute;
     bottom: 30px;
     left: 0;
+    z-index: 2;
 }
 
 #caption h2 {
@@ -211,6 +210,7 @@ main h2 {
     display: flex;
     justify-content: center;
     margin: 2px;
+    border: thick solid var(--teal);
 }
 
 /* #row-two img, #row-three img {
@@ -231,6 +231,7 @@ main h2 {
     position: absolute;
     bottom: 70px;
     left: 0;
+    z-index: 2;
 }
 
 /* styling for hover */
@@ -251,3 +252,4 @@ main h2 {
     #row-two-left, #row-two-right, #row-three-left, #row-three-right {
     width: 100%;
     }
+}
