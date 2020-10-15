@@ -245,11 +245,84 @@ main h2 {
         font-family: sans-serif;
     }
 
-    main {
-        margin:
+    header {
+        align-items: center;
     }
 
-    #row-two-left, #row-two-right, #row-three-left, #row-three-right {
-    width: 100%;
+    h1 {
+        width: 50%;
+        font-size: var(--mediumFont);
+        padding: none;
+        text-align: center;
     }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    header li {
+        border: none;
+    }
+
+    #floating-subtitles {
+        width: 50%;
+    }
+
+    #about-me, #my-work, #contact-me {
+        flex-direction: column;
+    }
+
+    main {
+        margin: 0 20px;
+    }
+    main h2 {
+        width: 100%;
+        font-size: var(--mediumFont);
+        border-style: none none solid none;
+        border-color: var(--blue);
+        border-width: 5px;
+        justify-content: center;
+    }
+
+    #about-me p {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        text-align: center;
+    }
+
+    #contact-me ul {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        flex-direction: column;
+    }
+
+    #contact-me li {
+        margin-top: 10px;
+        border: none;
+        text-align: center;
+    }
+
+    .projects {
+        width: 100%;
+        padding: 10px;
+        border: none;
+    }
+
+    #row-two, #row-three {
+        flex-direction: column;
+    }
+    
+    #row-two-left, #row-two-right, #row-three-left, #row-three-right {
+        width: 100%;
+        height: auto;
+    }
+
+    #caption1, #caption2, #caption3, #caption4, #caption5 {
+        width: 50%;
+        bottom: 0;
+    }
+    
+
 }
