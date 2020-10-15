@@ -157,23 +157,24 @@ main h2 {
 
 #row-one {
     position: relative;
-    text-align: center;
+    margin: 2px;
+    border: thick solid var(--teal);
 }
 
 #most-recent-project {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
-    border: thick solid var(--teal);
     opacity: 0.7;
+    display: block;
 }
 
 #recent-project {
-    justify-content: flex-start;
     width: 100%;
     height: 200px;
     object-fit: cover;
     opacity: 0.7;
+    display: block;
 }
 
 #caption1 {
@@ -212,13 +213,6 @@ main h2 {
     margin: 2px;
     border: thick solid var(--teal);
 }
-
-/* #row-two img, #row-three img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border: thick solid var(--teal);
-} */
 
 #caption2, #caption3, #caption4, #caption5 {
     width: 30%;
@@ -323,15 +317,20 @@ main h2 {
         flex-direction: column;
     }
     
-    #row-two-left, #row-two-right, #row-three-left, #row-three-right {
+    #row-one, #row-two-left, #row-two-right, #row-three-left, #row-three-right {
         width: 100%;
         height: auto;
+    }
+
+    #most-recent-project {
+        height: 200px;
     }
 
     #caption1, #caption2, #caption3, #caption4, #caption5 {
         width: 50%;
         bottom: 0;
     }
+
     
 
 }
