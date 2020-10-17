@@ -110,7 +110,7 @@ main h2 {
     display: flex;
 }
 
-/* styling for the about me details */
+/* styling for the about me details (particularly to stay on the right) */
 #about-me p {
     width: 70%;
     padding-left: 30px;
@@ -119,34 +119,7 @@ main h2 {
     border-width: 3px;
 }
 
-/* styling for the contact me details */
-#contact-me ul {
-    width: 70%;
-    padding-left: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-style: none none none solid;
-    border-color: var(--blue);
-    border-width: 3px;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
-#contact-me li {
-    border-style: none none solid none;
-    border-width: medium;
-    border-color: var(--blue);
-    font-size: var(--mediumFont);
-}
-
-#contact-me a {
-    color: var(--blue);
-    text-decoration-line: none;
-    font-size: var(--mediumFont);
-}
-
-/* styling for projects details */
+/* styling for projects details (particularly arranging the photographs in order of most recent project to other recent projects, and putting a border + caption for each project) */
 .projects {
     padding-left: 30px;
     width: 70%;
@@ -228,17 +201,46 @@ main h2 {
     z-index: 2;
 }
 
-/* styling for hover */
+/* styling for image, so that hovering over the image would result in slight opacity */
 #recent-project:hover, #most-recent-project:hover {
     opacity: 1;
 }
 
+/* styling for the contact me details (particularly to make the bullet lists line up horizontally in stylized text format) */
+#contact-me ul {
+    width: 70%;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-style: none none none solid;
+    border-color: var(--blue);
+    border-width: 3px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#contact-me li {
+    border-style: none none solid none;
+    border-width: medium;
+    border-color: var(--blue);
+    font-size: var(--mediumFont);
+}
+
+#contact-me a {
+    color: var(--blue);
+    text-decoration-line: none;
+    font-size: var(--mediumFont);
+}
+
 /* styling to ensure mobile responsiveness */
 @media only screen and (max-width: 768px) {
+    /* general styling: change font to something simpler */
     body {
         font-family: sans-serif;
     }
 
+    /* update header to be centered and move website name to the top */
     header {
         justify-content: center;
         padding: 40px;
@@ -253,6 +255,7 @@ main h2 {
         top: 0;
     }
 
+    /* update nav bar to be centered with different styling (border) */
     header ul {
         padding: 0;
         padding-top: 25px;
@@ -267,10 +270,12 @@ main h2 {
         font-size: var(--smallFont);
     }
 
+    /* adjust subtitles width to better fit viewport */
     #floating-subtitles {
         width: 50%;
     }
 
+    /* update main sections to stack on top of details, instead of being positioned to the left */
     #about-me, #my-work, #contact-me {
         flex-direction: column;
     }
@@ -287,6 +292,7 @@ main h2 {
         justify-content: center;
     }
 
+    /* update about me section */
     #about-me p {
         width: 100%;
         padding: 10px;
@@ -294,19 +300,7 @@ main h2 {
         text-align: center;
     }
 
-    #contact-me ul {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        flex-direction: column;
-    }
-
-    #contact-me li {
-        margin-top: 10px;
-        border: none;
-        text-align: center;
-    }
-
+    /* update portfolio section to have each project stack on top of each other in the same format */
     .projects {
         width: 100%;
         padding: 10px;
@@ -331,6 +325,17 @@ main h2 {
         bottom: 0;
     }
 
-    
+    /* update contact me section, specifically making the contact details line up vertically instead of horizontally */
+    #contact-me ul {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        flex-direction: column;
+    }
 
+    #contact-me li {
+        margin-top: 10px;
+        border: none;
+        text-align: center;
+    }
 }
